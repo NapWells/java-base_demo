@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/funLearn/funLearn.iml" filepath="$PROJECT_DIR$/funLearn/funLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-base_demo.iml" filepath="$PROJECT_DIR$/.idea/java-base_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/streamLearn/streamLearn.iml" filepath="$PROJECT_DIR$/streamLearn/streamLearn.iml" />
