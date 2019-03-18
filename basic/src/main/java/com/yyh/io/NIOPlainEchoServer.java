@@ -17,7 +17,8 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class NIOPlainEchoServer {
-    public void serve(int port) throws IOException {
+
+    public void server(int port) throws IOException {
         System.out.println("Listening for connections on port " + port);
         ServerSocketChannel serverChannel = ServerSocketChannel.open();
         ServerSocket ss = serverChannel.socket();
@@ -76,9 +77,15 @@ public class NIOPlainEchoServer {
                     try {
                         key.channel().close();
                     } catch (IOException cex) {
+                        cex.printStackTrace();
                     }
                 }
             }
         }
+    }
+
+    public static void main(String[] args) throws IOException {
+        NIOPlainEchoServer server = new NIOPlainEchoServer();
+        server.server(8888);
     }
 }
